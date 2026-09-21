@@ -11,6 +11,18 @@ This repository contains the hands-on learning materials for the **JC AI Enginee
 
 ---
 
+## ⚡ TL;DR
+
+-  **For lecturers only** — this repository contains the official JC AI Engineer hands-on materials for Purwadhika.
+- 🚫 **Do not share this repository directly with students.**
+- Currently available: **Module 3 — LLM and Agentic AI**. Modules 1, 2, 4, 5, and 6 are coming soon.
+- Create a **separate class repository** for each class.
+- Copy the relevant hands-on materials from this repository into the class repository.
+- Commit and push the materials to the class repository, then share the **class repository** with students.
+- 🚫 Never commit API keys, passwords, tokens, or other sensitive credentials.
+
+---
+
 ## About This Repository
 
 This repository serves as the central source for hands-on materials used in the **JC AI Engineer learning program**.
@@ -287,7 +299,7 @@ When making changes, consider whether the change should be:
 
 ---
 
-## 📌 Quick Reminder
+## Quick Reminder
 
 Before every class:
 
@@ -349,7 +361,7 @@ Hands-on materials covering workflow automation using n8n.
 
 ---
 
-## 👨‍🏫 Intended Audience
+## Intended Audience
 
 This repository is intended for:
 
