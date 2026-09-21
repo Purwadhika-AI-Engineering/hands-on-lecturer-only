@@ -209,7 +209,7 @@ Please keep the following guidelines in mind:
 
 ---
 
-## 🧑‍🏫 Lecturer Workflow
+## Lecturer Workflow
 
 ### Before Class
 
@@ -233,7 +233,7 @@ Please keep the following guidelines in mind:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 The repository is organized by learning module.
 
@@ -279,7 +279,7 @@ If new materials or updates are available, use the latest version when preparing
 
 ---
 
-## 📝 Improving the Materials
+## Improving the Materials
 
 If you identify:
 
@@ -321,7 +321,7 @@ The class repository is what should be **shared with students**.
 
 ---
 
-## 📖 Module Overview
+## Module Overview
 
 ### Module 1 — Programming Fundamentals and Statistics
 
