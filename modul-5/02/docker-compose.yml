@@ -1,0 +1,23 @@
+# CATCH-UP PACK: jalankan kedua layanan sekaligus, dengan nama & port yang sama seperti di lab.
+# Hanya untuk peserta yang tertinggal. Docker Compose dibahas di materi berikutnya.
+#   docker compose up -d --build
+#   docker compose down
+services:
+  llm-agent:
+    build: ./mlops-ai-agent-handson
+    image: llm-agent-service
+    container_name: llm-agent
+    ports:
+      - "8000:8000"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4.1-mini}
+
+  cv-api:
+    build: ./mlops-cv
+    image: cv-api
+    container_name: cv-api
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./mlops-cv/models:/app/models

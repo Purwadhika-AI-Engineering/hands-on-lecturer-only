@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Trained weights are NOT baked into the image: mount them as a volume
+# (-v "$(pwd)/models:/app/models") so the same image works with any model file.
+models/*.h5
+models/*.keras
+
+# Local junk
+test_image.jpg
+.git/
+.vscode/
+.idea/
+.DS_Store
+.env
+.env.*

@@ -1,0 +1,10 @@
+services:
+  cv-api:
+    build: .
+    image: cv-api
+    container_name: cv-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models
+    restart: unless-stopped

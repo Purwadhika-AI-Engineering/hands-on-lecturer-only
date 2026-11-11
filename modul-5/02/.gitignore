@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pytest_cache/
+# Bobot model besar (130 MB+): bagikan lewat Drive, jangan lewat git
+mlops-cv/models/*.h5
+mlops-cv/models/*.keras

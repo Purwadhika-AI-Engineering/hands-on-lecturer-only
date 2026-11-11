@@ -1,0 +1,4 @@
+# Dependency khusus untuk test (ringan, TIDAK perlu TensorFlow / LangChain)
+pytest>=7.4
+requests>=2.31
+pillow>=10.1
