@@ -1,8 +1,0 @@
-.env
-__pycache__/
-*.pyc
-runtime/*
-!runtime/.gitkeep
-.starter_backup/
-.pytest_cache/
-node_modules/

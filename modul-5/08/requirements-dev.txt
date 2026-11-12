@@ -1,2 +1,0 @@
-# Only needed to regenerate samples/*.pdf
-reportlab==5.1.0
