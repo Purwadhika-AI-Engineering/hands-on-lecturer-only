@@ -2,6 +2,9 @@
 
 Module 05 · Session 08 · Job Connector AI Engineering
 
+> [!IMPORTANT]
+> TAKE OUT THE `instructor/` FOLDER BEFORE YOU HAND IN THIS REPO TO STUDENTS!
+
 AcmeBot is a customer-support agent for a fictional Indonesian online shop. It has a RAG knowledge base and three tools
 (Text-to-SQL, e-mail, file reader). It works, and it is **vulnerable by design**.
 In this lab you attack it, defend it layer by layer, then prove the defenses work with an automated attack suite.
