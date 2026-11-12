@@ -1,0 +1,7 @@
+.env
+.git
+runtime
+promptfoo
+instructor
+__pycache__
+.pytest_cache

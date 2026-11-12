@@ -1,0 +1,36 @@
+services:
+  app:
+    build: .
+    env_file: .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app          # edit the guards on your machine, the app reloads by itself
+      - ./tests:/app/tests
+      - runtime:/app/runtime
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://localhost:8000/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  # Attack suite (Lab steps 1 and 3). Run with:  docker compose --profile tools run --rm promptfoo
+  promptfoo:
+    profiles: ["tools"]
+    image: node:22-slim
+    working_dir: /work/promptfoo
+    volumes:
+      - ./promptfoo:/work/promptfoo
+      - ./samples:/work/samples:ro
+    environment:
+      TARGET_URL: http://app:8000
+      PROMPTFOO_DISABLE_TELEMETRY: "1"
+      PROMPTFOO_DISABLE_UPDATE: "1"
+      NAME: ${NAME:-latest}
+    depends_on:
+      app:
+        condition: service_healthy
+    command: ["sh", "-c", "npx -y promptfoo@0.125.1 eval -c promptfooconfig.yaml -o results/$${NAME}.json --no-cache; exit 0"]
+
+volumes:
+  runtime:
